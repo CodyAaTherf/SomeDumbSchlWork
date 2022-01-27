@@ -1,4 +1,4 @@
-bill_amt = float(input("Bill Amount: "))
+# Refactored
 
 def calc_dis(bill_amt):
     if bill_amt > 2000:
@@ -9,7 +9,9 @@ def calc_dis(bill_amt):
         return  bill_amt*(1)
     return bill_amt
 
-print(f"Total bill amount = {calc_dis(bill_amt)}")
+if __name__ == "__main__":
+    bill_amt = float(input("Bill Amount: "))
+    print(f"Total bill amount = {calc_dis(bill_amt)}")
 
 """
 I HAVE MADE THIS ONE A BIT SIMPLE. I COULD HAVE USED `if __name__ == "__main__":`

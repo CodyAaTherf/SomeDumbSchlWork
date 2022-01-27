@@ -34,14 +34,16 @@ number = int(input("Which shape do you want to calculate the area of: "))
 
 if number == 1:
     radius = int(input("Enter the radius of the circle: "))
-    area1 = 3.14 * radius * radius
-    print("The area of circle is" , area1)
+    area = 3.14 * radius * radius
+    print(f"The area of circle is {area}")
 elif number == 2:
     side = int(input("Enter the side of the square: "))
-    area2 = side * side
-    print("The area of the square is" , area2)
+    area = side * side
+    print(f"The area of the square is {area}")
 elif number == 3:
     b = int(input("Enter the breadth of rectangle: "))
     l = int(input("Enter the length of rectangle: "))
-    area3 = b * l
-    print("The area of rectangle is" , area3)
+    area = b * l
+    print(f"The area of rectangle is {area}")
+else:
+    print("Please enter a valid number!")
